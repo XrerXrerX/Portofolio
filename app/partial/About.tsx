@@ -33,7 +33,7 @@ export default function About({ }: Props) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 className='space-y-4 px-0 md:px-10'>
-                <h4 className='text-xl md:text-2xl xl:text-3xl mt-4 md:mt-0 xl:mt-0 font-semibold'>My  <span className='underline decoration-[#F7AB0A]/50'>background</span> </h4>
+                <h4 className='text-xl md:text-2xl xl:text-3xl mt-4 md:mt-0 xl:mt-0 font-semibold'> This is a little things <span className='underline decoration-[#F7AB0A]/50'>About me</span> </h4>
 
                 <p className='text-justify text-[12px] md:tex-base xl:text-base  pb-0 mb-0'>My name is Diki Hidayatullah you can call me Kiki , now im 27 years old .<br />this is it.....  i will tell you a little things about me. im a man that love more privillage than a power. im full learner and fast pace thinking of something. im experience in FullStack Developer and i have background accounting 2.5 years as general accounting . i realize this world is just not enough for tech person thats why i must have knowledge about economic world. i need to know how business run and also want to know more about tech , and here iam . knowing finance , accounting and IT . i realize im poor bout experience but im so thirsty about knowledge .</p>
             </motion.div>
