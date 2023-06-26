@@ -28,7 +28,7 @@ export default function Home() {
       < Header />
 
       {/* //HERO */}
-      < section id='hero' className='snap-center' >
+      < section className='snap-center' id='hero'>
         <Hero />
       </section >
 
