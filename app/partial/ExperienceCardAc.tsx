@@ -28,7 +28,7 @@ export default function ExperienceCardAc({ }: Props) {
                     <li>reporting financial report monthl</li>
                     <li>Grouping transaction with COA Spesifications </li>
                 </ul>
-                <p className='uppercase underline py-5 text-gray-300 text-center text-[12px] md:text-[15px] xl:test-[20px]'>reason resign : want to Switch Career cause my major is an IT</p>
+                <p className='uppercase underline py-5 text-gray-300 text-center text-[12px] md:text-[15px] xl:test-[20px]'>reasons for resigning : want to Switch Career cause my major is an IT</p>
             </div>
         </article>
     )

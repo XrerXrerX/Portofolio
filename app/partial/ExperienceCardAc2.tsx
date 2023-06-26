@@ -36,7 +36,7 @@ export default function ExperienceCardAc2({ }: Props) {
                     <li>Responsilibities about inventory ( Controlling Purchase , Sales ,and Stock check every month)</li>
                     <li>- making a recapitulation about All AP , AR , Allowance , asset , and All Code Account if needed</li>
                 </ul>
-                <p className='uppercase underline py-2 text-gray-300 text-center text-[10px] md:text-xl'>Alasan resign : Have chance Opportunity work in big Company</p>
+                <p className='uppercase underline py-2 text-gray-300 text-center text-[10px] md:text-xl'>reasons for resigning : Have chance Opportunity work in big Company</p>
             </div>
         </article>
     )
