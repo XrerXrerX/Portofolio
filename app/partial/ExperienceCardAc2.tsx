@@ -22,8 +22,8 @@ export default function ExperienceCardAc2({ }: Props) {
                 <p className='font-bold text-l md:text-xl xl:text-2xl mt-1 text-center'>CV. BINA KARYA USAHA</p>
 
 
-                <p className='text-[15px] md:text-xl uppercase py-2 md:py-2 text-gray-300 text-center'>started work 2016 - Hune 2018 ( 2years 6 month )</p>
-                <ul className='list-disc space-y-2 md:space-y-2 spa ml-5 text-[10px] md:text-[15px]'>
+                <p className='text-[15px] md:text-xl py-2 md:py-2 text-gray-300 text-center'>started work 2016 - June 2018</p>
+                <ul className='list-disc space-y-0 md:space-y-2 spa ml-5 text-[10px] md:text-[15px]'>
                     <li>Controlling Acoount Receivable and make report every month</li>
                     <li>Controlling Acoount payable and make report every month </li>
                     <li>Make sure AP and AR paid on Schedule</li>
@@ -36,7 +36,7 @@ export default function ExperienceCardAc2({ }: Props) {
                     <li>Responsilibities about inventory ( Controlling Purchase , Sales ,and Stock check every month)</li>
                     <li>- making a recapitulation about All AP , AR , Allowance , asset , and All Code Account if needed</li>
                 </ul>
-                <p className='uppercase underline py-5 text-gray-300 text-center'>Alasan resign : Have chance Opportunity work in big Company</p>
+                <p className='uppercase underline py-2 text-gray-300 text-center text-[10px] md:text-xl'>Alasan resign : Have chance Opportunity work in big Company</p>
             </div>
         </article>
     )

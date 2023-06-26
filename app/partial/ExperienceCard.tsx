@@ -32,8 +32,8 @@ export default function ExperienceCard({ }: Props) {
                     <img src="nginx.png" alt="" className='h-5 w-5 md:w-10 md:h-10 rounded-full' />
                     <img src="apache.jpg" alt="" className='h-5 w-5 md:w-10 md:h-10 rounded-full' />
                 </div>
-                <p className='uppercase py-0 md:py-5 text-gray-300 text-center'>started work 2019 - untill Now</p>
-                <ul className='list-disc space-y-2 md:space-y-4 spa ml-5 text-m md:text-xl'>
+                <p className='uppercase py-2 md:py-5 text-gray-300 text-center text-[13px] md:text-xl' >started work 2019 - untill Now</p>
+                <ul className='list-disc space-y-2 md:space-y-4 spa ml-5 text-[13px] md:text-xl'>
                     <li>make and develope a project using laravel ( setup middleware, route , and data relation between route)  </li>
                     <li>make a static website using html boostrap , javascript </li>
                     <li>deploy a project to Apache and Nginx using Ubuntu 18.04 & 22.04</li>
