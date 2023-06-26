@@ -21,7 +21,7 @@ export default function Project({ }: Props) {
             <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 mt-30 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
                 {projects.map((projects, i) => (
 
-                    <div className='w-screen xl:w-[1200px] h-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44  mt-20'>
+                    <div className='w-screen xl:w-[1200px] h-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44  mt-20' key={i}>
                         <motion.img
                             initial={{ y: -300, opacity: 0 }}
                             transition={{ duration: 1.2 }}
