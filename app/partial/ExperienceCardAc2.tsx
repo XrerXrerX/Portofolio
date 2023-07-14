@@ -7,7 +7,7 @@ type Props = {}
 export default function ExperienceCardAc2({ }: Props) {
     return (
         <article
-            className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[340px] md:w-[800px] xl:w-[1000px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden mt-0 md:mt-20 xl:mt-24'>
+            className='flex flex-col rounded-lg items-center space-y-2 flex-shrink-0 w-[340px] md:w-[600px] md:h-[770px] xl:w-[1200px] xl:h-[750px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden mt-0 md:mt-20 xl:mt-24'>
             <motion.img
                 initial={{ y: -100, opacity: 0 }}
                 transition={{ duration: 1.2 }}

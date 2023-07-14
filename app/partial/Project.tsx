@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 type Props = {}
 
 export default function Project({ }: Props) {
-    const projects = [1, 2, 3]
+    const projects = [1, 2, 3, 4, 5, 6]
     const projectLength = projects.length;
     const i = 0
     return (
@@ -16,12 +16,12 @@ export default function Project({ }: Props) {
             className='h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center'>
 
 
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl z-30'>Projects</h3>
+            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-3xl z-30'>Projects</h3>
 
             <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 mt-30 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
                 {projects.map((projects, i) => (
 
-                    <div className='w-screen xl:w-[1200px] h-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44  mt-20' key={i}>
+                    <div className='w-[400px] xl:w-[580px] md:w-[500px] h-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-4 md:p-8 xl:p-4  mt-0 md:mt-10 xl:mt-20' key={i}>
                         <motion.img
                             initial={{ y: -300, opacity: 0 }}
                             transition={{ duration: 1.2 }}
@@ -34,27 +34,53 @@ export default function Project({ }: Props) {
                             <>
                                 <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
                                     <h4 className='text-3xl font-semibold text-center'>
-                                        <span className='underline decoration-[#F7AB0A]/50'>Project {i + 1} of {projectLength} :</span>  BackEnd Development
+                                        <span className='underline decoration-[#F7AB0A]/50'>Project {i + 1} of {projectLength} :</span><br />  MERN DASHBOARD
                                     </h4>
-                                    <p className='text-lg text-center md:text-left'> Deploy Laravel and Any Static Website to server and i manage 4 server including 1 Server AWS . ( Using Filezilla , Putty and command shell also gitbash )</p>
+                                    {/* <p className='text-lg text-center md:text-left'> MONGO + EXPRESS + REACT + NODEJS </p> */}
                                 </div>
                             </>
                         ) : i === 1 ? (
                             <>
                                 <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
                                     <h4 className='text-3xl font-semibold text-center'>
-                                        <span className='underline decoration-[#F7AB0A]/50'>Project {i + 1} of {projectLength} :</span>  LARAVEL BACKEND AND FRONTEND
+                                        <span className='underline decoration-[#F7AB0A]/50'>Project {i + 1} of {projectLength} :</span><br />   MERN SOCIAL WEB
                                     </h4>
-                                    <p className='text-lg text-center md:text-left'>Make a website backend frontend also manage all data income and outcome to database using sql</p>
+                                    {/* <p className='text-lg text-center md:text-left'> MONGO + EXPRESS + REACT + NODEJS (JWT LOGIN ) </p> */}
+
                                 </div>
                             </>
                         ) : i === 2 ? (
                             <>
                                 <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
                                     <h4 className='text-3xl font-semibold text-center'>
-                                        <span className='underline decoration-[#F7AB0A]/50'>Project {i + 1} of {projectLength} :</span>  STATIC WEBSITE
+                                        <span className='underline decoration-[#F7AB0A]/50'>Project {i + 1} of {projectLength} :</span><br />   NETFLIX CLONE </h4>
+                                    {/* <p className='text-lg text-center md:text-left'> REACT + API</p> */}
+                                </div>
+                            </>
+                        ) : i === 3 ? (
+                            <>
+                                <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+                                    <h4 className='text-3xl font-semibold text-center'>
+                                        <span className='underline decoration-[#F7AB0A]/50'>Project {i + 1} of {projectLength} :</span><br />   LARAVEL BACKEND </h4>
+                                    {/* <p className='text-lg text-center md:text-left'> PHP + SQL + BOOSTRAP </p> */}
+                                </div>
+                            </>
+                        ) : i === 4 ? (
+                            <>
+                                <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+                                    <h4 className='text-3xl font-semibold text-center'>
+                                        <span className='underline decoration-[#F7AB0A]/50'>Project {i + 1} of {projectLength} :</span><br />   DEVOPS BACKEND
                                     </h4>
-                                    <p className='text-lg text-center md:text-left'> Membuat user interaktif untuk website static</p>
+                                    {/* <p className='text-lg text-center md:text-left'> FILEZILLA -AWS - PUTTY -VPS</p> */}
+                                </div>
+                            </>
+                        ) : i === 5 ? (
+                            <>
+                                <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+                                    <h4 className='text-3xl font-semibold text-center'>
+                                        <span className='underline decoration-[#F7AB0A]/50'>Project {i + 1} of {projectLength} :</span><br />   STATIC WEBSITE
+                                    </h4>
+                                    {/* <p className='text-lg text-center md:text-left'> Membuat user interaktif untuk website static</p> */}
                                 </div>
                             </>
                         ) : null}
