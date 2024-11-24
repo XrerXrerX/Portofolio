@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 type Props = {};
 
 export default function Project({}: Props) {
-  const projects = [1, 2, 3, 4, 5, 6];
+  const projects = [1, 2, 3, 4, 5, 6, 7];
   const projectLength = projects.length;
   const i = 0;
   return (
@@ -32,7 +32,7 @@ export default function Project({}: Props) {
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              src={`${i + 1}.png`}
+              src={i === 5 ? `${i + 1}.gif` : `${i + 1}.png`} // Change to GIF when i is 6
               alt=""
             />
 
@@ -98,6 +98,18 @@ export default function Project({}: Props) {
                 </div>
               </>
             ) : i === 5 ? (
+              <>
+                <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+                  <h4 className="text-3xl font-semibold text-center">
+                    <span className="underline decoration-[#F7AB0A]/50">
+                      Project {i + 1} of {projectLength} :
+                    </span>
+                    <br /> Any Project Ask Me directly
+                  </h4>
+                  {/* <p className='text-lg text-center md:text-left'> FILEZILLA -AWS - PUTTY -VPS</p> */}
+                </div>
+              </>
+            ) : i === 6 ? (
               <>
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
                   <h4 className="text-3xl font-semibold text-center">
