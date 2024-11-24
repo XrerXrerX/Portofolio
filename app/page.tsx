@@ -1,14 +1,16 @@
-'use client'
-import Image from 'next/image'
-import Header from "./partial/Header"
-import Hero from "./partial/Hero"
-import About from "./partial/About"
-import Experience from "./partial/Experience"
-import Skills from "./partial/Skills"
-import Project from "./partial/Project"
-import ContacMe from "./partial/ContactMe"
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+/** @format */
+
+"use client";
+import Image from "next/image";
+import Header from "./partial/Header";
+import Hero from "./partial/Hero";
+import About from "./partial/About";
+import Experience from "./partial/Experience";
+import Skills from "./partial/Skills";
+import Project from "./partial/Project";
+import ContacMe from "./partial/ContactMe";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,56 +19,53 @@ export default function Home() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
+      className="bg-[#040b0b] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"
+    >
       {/* // header */}
-      < Header />
+      <Header />
 
       {/* //HERO */}
-      < section className='snap-center' id='hero'>
+      <section className="snap-center" id="hero">
         <Hero />
-      </section >
+      </section>
 
       {/* //about */}
-      < section className='snap-center' id='about' >
+      <section className="snap-center" id="about">
         <About />
-      </section >
+      </section>
 
       {/* //experience */}
-      < section className='snap-center' id='experience' >
+      <section className="snap-center" id="experience">
         <Experience />
-      </section >
+      </section>
 
       {/* //skills */}
-      < section className='snap-start' id='skils' >
+      <section className="snap-start" id="skils">
         <Skills />
-      </section >
+      </section>
 
       {/* //project */}
-      < section className='snap-start' id='projects' >
+      <section className="snap-start" id="projects">
         <Project />
-      </section >
-
+      </section>
 
       {/* //contact me  */}
-      < section className='snap-start' id='contactme' >
+      <section className="snap-start" id="contactme">
         <ContacMe />
-      </section >
-
+      </section>
 
       {/* //footer  */}
       <Link href="#hero">
-        <footer className='sticky bottom-5 w-full cursor-pointer'>
-          <div className='flex relative items-center justify-center'>
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex relative items-center justify-center">
             <img
-              className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer'
-              src="up2.png" alt="" />
+              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+              src="up2.png"
+              alt=""
+            />
           </div>
         </footer>
-
       </Link>
-
-
-    </motion.div >
-
-  )
+    </motion.div>
+  );
 }

@@ -7,14 +7,14 @@ type Props = {
   directionLeft?: boolean;
 };
 
-export default function SkillCi({ directionLeft }: Props) {
+export default function SkillNodejs({ directionLeft }: Props) {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.img
         initial={{ x: directionLeft ? -150 : 150, opacity: 0 }}
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, x: 0 }}
-        src="prome.png"
+        src="rabbit.png"
         className="rounded-full border border-gray-500 object-cover w-16 h-16 md:w-24 md:h-24 xl:w-32 xl:h-32 filter group-hover:grayscale-0 transition duration-250 ease-in-out"
       />
       <div className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-black w-16 h-16 md:w-24 md:h-24 xl:w-32 xl:h-32 rounded-full">
