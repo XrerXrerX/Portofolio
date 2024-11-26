@@ -24,7 +24,7 @@ export default function Project({}: Props) {
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 mt-30 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         {projects.map((projects, i) => (
           <div
-            className="w-[400px] xl:w-[580px] md:w-[500px] h-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-4 md:p-8 xl:p-4  mt-0 md:mt-10 xl:mt-20"
+            className="w-[400px] xl:w-[580px]  sm:w-[500px]  lg:w-[500px] md:w-[500px] xs:w-[300px] h-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-4 md:p-8 xl:p-4  mt-0 md:mt-10 xl:mt-20"
             key={i}
           >
             <motion.img
@@ -33,13 +33,14 @@ export default function Project({}: Props) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={i === 5 ? `${i + 1}.gif` : `${i + 1}.png`} // Change to GIF when i is 6
+              className="rounded-3xl"
               alt=""
             />
 
             {i === 0 ? (
               <>
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                  <h4 className="text-3xl font-semibold text-center">
+                  <h4 className="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xs:text-sm font-semibold text-center">
                     <span className="underline decoration-[#F7AB0A]/50">
                       Project {i + 1} of {projectLength} :
                     </span>
@@ -51,7 +52,7 @@ export default function Project({}: Props) {
             ) : i === 1 ? (
               <>
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                  <h4 className="text-3xl font-semibold text-center">
+                  <h4 className="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xs:text-sm font-semibold text-center">
                     <span className="underline decoration-[#F7AB0A]/50">
                       Project {i + 1} of {projectLength} :
                     </span>
@@ -63,7 +64,7 @@ export default function Project({}: Props) {
             ) : i === 2 ? (
               <>
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                  <h4 className="text-3xl font-semibold text-center">
+                  <h4 className="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xs:text-sm font-semibold text-center">
                     <span className="underline decoration-[#F7AB0A]/50">
                       Project {i + 1} of {projectLength} :
                     </span>
@@ -75,7 +76,7 @@ export default function Project({}: Props) {
             ) : i === 3 ? (
               <>
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                  <h4 className="text-3xl font-semibold text-center">
+                  <h4 className="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xs:text-sm font-semibold text-center">
                     <span className="underline decoration-[#F7AB0A]/50">
                       Project {i + 1} of {projectLength} :
                     </span>
@@ -87,7 +88,7 @@ export default function Project({}: Props) {
             ) : i === 4 ? (
               <>
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                  <h4 className="text-3xl font-semibold text-center">
+                  <h4 className="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xs:text-sm font-semibold text-center">
                     <span className="underline decoration-[#F7AB0A]/50">
                       Project {i + 1} of {projectLength} :
                     </span>
@@ -100,7 +101,7 @@ export default function Project({}: Props) {
             ) : i === 5 ? (
               <>
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                  <h4 className="text-3xl font-semibold text-center">
+                  <h4 className="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xs:text-sm font-semibold text-center">
                     <span className="underline decoration-[#F7AB0A]/50">
                       Project {i + 1} of {projectLength} :
                     </span>
@@ -112,7 +113,7 @@ export default function Project({}: Props) {
             ) : i === 6 ? (
               <>
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                  <h4 className="text-3xl font-semibold text-center">
+                  <h4 className="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xs:text-sm font-semibold text-center">
                     <span className="underline decoration-[#F7AB0A]/50">
                       Project {i + 1} of {projectLength} :
                     </span>
