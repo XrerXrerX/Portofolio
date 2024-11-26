@@ -49,7 +49,7 @@ export default function ExperienceCard({}: Props) {
         <p className="uppercase py-2 text-stone-500 text-center 2xl:text-xl xl:text-2xl lg:text-lg md:text-lg sm:text-base xs:text-sm">
           started work 2016 - June 2018
         </p>
-        <ul className="list-disc grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 gap-1 2xl:text-sm xl:text-xxss lg:text-sm md:text-xs sm:text-xs xs:text-xs text-stone-400">
+        <ul className="list-disc grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 gap-1 2xl:text-sm xl:text-xxss lg:text-sm md:text-xs sm:text-xs xs:text-xxss text-stone-400">
           <li>Controlling Acoount Receivable and make report every month</li>
           <li>Controlling Acoount payable and make report every month </li>
           <li>Make sure AP and AR paid on Schedule</li>

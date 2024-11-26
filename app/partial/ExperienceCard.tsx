@@ -29,7 +29,7 @@ export default function ExperienceCard({}: Props) {
       viewport={{
         margin: "-2%", // Menyesuaikan margin viewport
       }}
-      className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0 2xl:w-3/4 xl:w-3/4 lg:w-[550px] md:w-[550px] sm:w-[350px] xs:w-[340px]  snap-center bg-[#060f14] border-b-4 border-b-[#505f4c] 2xl:pt-4 xl:pt-4 lg:pt-2 md:pt-2 sm:pt-2 xs:pt-2 opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-pointer overflow-hidden 2xl:mt-4 xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xs:mt-4"
+      className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0 2xl:w-3/4 xl:w-3/4 lg:w-[550px] md:w-[550px] sm:w-[350px] xs:w-[230px]  snap-center bg-[#060f14] border-b-4 border-b-[#505f4c] 2xl:pt-4 xl:pt-4 lg:pt-2 md:pt-2 sm:pt-2 xs:pt-2 opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-pointer overflow-hidden 2xl:mt-4 xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xs:mt-4"
     >
       <motion.img
         initial={{ y: -100, opacity: 0 }}
@@ -48,118 +48,118 @@ export default function ExperienceCard({}: Props) {
         <p className="font-light 2xl:text-xl xl:text-lg lg:text- md:text-lg sm:text-sm xs:text-sm mt-1 text-center text-stone-500">
           (contract projet)
         </p>
-        <div className="flex flex-wrap gap-2 my-1 justify-center">
+        <div className="flex flex-wrap gap-2 my-1 justify-center ">
           <img
             src="vite.jpg"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="ubuntu.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="typescript.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="tlwind.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="laravel.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="react.jpg"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="rabbit.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="javascript.jpeg"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="nodejs.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="nextjs.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="mysql.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="cloudflare.jpeg"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="aws.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="nginx.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="apache.jpg"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="postgresql.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="graph.jpg"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="docker.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="expressjs.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="html.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
           <img
             src="css.png"
             alt=""
-            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full"
+            className="2xl:h-5 xl:h-5 lg:h-5 md:h-5 sm:h-5 xs:h-5 2xl:w-5 xl:w-5 lg:w-5 md:w-5 sm:w-5 xs:w-5 rounded-full hidden 2xl:block xl:block lg:block md:block sm:block"
           />
         </div>
 
-        <p className="uppercase py-2 text-stone-500 text-center 2xl:text-xl xl:text-2xl lg:text-lg md:text-lg sm:text-xxs xs:text-sm">
+        <p className="uppercase py-2 text-stone-500 text-center 2xl:text-xl xl:text-2xl lg:text-lg md:text-lg sm:text-xxs xs:text-xxss">
           started work 2019 - untill Now
         </p>
-        <ul className="list-disc grid 2xl:grid-cols-3 xl:grid-cols-3 m-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 gap-1 2xl:text-base xl:text-sm lg:text-xxs md:text-xxs sm:text-xxss xs:text-xxss text-stone-400">
+        <ul className="list-disc grid 2xl:grid-cols-3 xl:grid-cols-3 m-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 gap-1 2xl:text-base xl:text-sm lg:text-xxs md:text-xxs sm:text-xxss xs:text-tiny text-stone-400">
           <li> Manage cloud 12 server AWS and 4 VPS Hostinger</li>
           <li>
             Deploy applications on AWS EC2 with self-configured environments.
