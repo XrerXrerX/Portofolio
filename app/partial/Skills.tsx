@@ -32,50 +32,50 @@ type Props = {};
 
 export default function Skills({}: Props) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.9 }}
-      className="h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[1000px] px:10 xl:px-10 min-h-screen justify-evenly xl:space-y-0 mx-auto items-center"
-    >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-slate-200 text-2xl font-extrabold">
-        Skills
-      </h3>
-
-      <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm ">
-        hover over a skill for seing profiency
-      </h3>
-
-      <div className="grid  xl:grid-cols-6  gap-2 md:gap-5 xl:gap-5">
-        <SkillReact />
-        <SkillTypescript />
-        <SkillJavascript />
-        <SkillCss />
-        <SkillJs />
-        <SkillTailwind />
-        <SkillNextjs />
-
-        <SkillLaravel />
-        <RabbitMq />
-        <SkillNodejs />
-        <SkillExpress />
-        <SkillNest />
-        <SkillUbuntu />
-        <SkillMysql />
-
-        <SkillMongodb />
-        <SkillCoulflare />
-        <SkillApache />
-        <SkillAws />
-        <SkillCi />
-
-        <SkillNginx />
-        <SkillBoostrap />
-
-        <SkillDocker />
-        <SkillKube />
-        <SkillSass />
+    <div className="h-screen ">
+      <div className="flex justify-center items-center ">
+        <div className="text-center mt-24">
+          <h3 className="uppercase tracking-[20px] text-stone-500 2xl:text-3xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl xs:text-lg font-extrabold">
+            Skills
+          </h3>
+          <p className="mt-2 text-stone-400 text-sm 2xl:text-base xl:text-sm">
+            hover over a skill for seing profiency
+          </p>
+        </div>
       </div>
-    </motion.div>
+
+      <div className="flex justify-center">
+        <div className="2xl:w-1/2 xl:w-1/2 lg:w-3/4 md:w-3/4 sm:w-3/4 xs:w-2/5 grid 2xl:grid-cols-7 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 xs:grid-cols-3 2xl:gap-6 xl:gap-6 lg:gap-4 md:gap-4 sm:gap-2 xs:gap-2 mt-4">
+          <SkillReact />
+          <SkillTypescript />
+          <SkillJavascript />
+          <SkillCss />
+          <SkillJs />
+          <SkillTailwind />
+          <SkillNextjs />
+
+          <SkillLaravel />
+          <RabbitMq />
+          <SkillNodejs />
+          <SkillExpress />
+          <SkillNest />
+          <SkillUbuntu />
+          <SkillMysql />
+
+          <SkillMongodb />
+          <SkillCoulflare />
+          <SkillApache />
+          <SkillAws />
+          <SkillCi />
+
+          <SkillNginx />
+          <SkillBoostrap />
+
+          <SkillDocker />
+          <SkillKube />
+          <SkillSass />
+        </div>
+      </div>
+    </div>
   );
 }
