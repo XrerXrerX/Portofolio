@@ -19,7 +19,7 @@ export default function SkillSass({ directionLeft }: Props) {
       />
       <div className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-black w-16 h-16 md:w-24 md:h-24 xl:w-32 xl:h-32 rounded-full">
         <div className="flex items-center justify-center h-full">
-          <p className="text-2xl font-bold text-white opacity-100">70%</p>
+          <p className="text-2xl font-bold text-white opacity-100">90%</p>
         </div>
       </div>
     </div>

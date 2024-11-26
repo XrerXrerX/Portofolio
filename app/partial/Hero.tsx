@@ -11,8 +11,8 @@ type Props = {};
 export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: [
-      "Hi, Thanks for reaching me out !",
-      "i'am a full learner not a programmer ",
+      "Hi, Thanks for reaching me out!",
+      "i'am a full learner not a programmer",
       "<butMoreImportantToCodeMore/>",
     ],
     loop: true,
@@ -27,10 +27,10 @@ export default function Hero({}: Props) {
         alt=""
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-slate-200 pb-2 tracking-[10px] md:tracking-[15px] xl:tracking-[15px]">
+        <h2 className="2xl:text-lg xl:text-lg md:text-lg lg:text-sm sm:text-sm xs:text-sm uppercase text-slate-200 pb-2 tracking-[10px] md:tracking-[15px] xl:tracking-[15px]">
           System Engineer
         </h2>
-        <h1 className="text-xl my-5 md:text-3xl lg:text-4xl font-semibold scroll-px-10 text-[#FFEFD2]">
+        <h1 className="text-xl my-5 2xl:text-4xl xl:text-3xl  lg:text-4xl md:text-3xl sm:text-2xl xs:text-lg font-semibold scroll-px-10 text-[#FFEFD2]">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#775830" />
         </h1>
