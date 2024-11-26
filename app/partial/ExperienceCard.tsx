@@ -32,7 +32,7 @@ export default function ExperienceCard({}: Props) {
       className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0 2xl:w-3/4 xl:w-3/4 lg:w-[550px] md:w-[550px] sm:w-[350px] xs:w-[230px]  snap-center bg-[#060f14] border-b-4 border-b-[#505f4c] 2xl:pt-4 xl:pt-4 lg:pt-2 md:pt-2 sm:pt-2 xs:pt-2 opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-pointer overflow-hidden 2xl:mt-4 xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xs:mt-4"
     >
       <motion.img
-        initial={{ y: -100, opacity: 0 }}
+        initial={{ y: -50, opacity: 0 }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

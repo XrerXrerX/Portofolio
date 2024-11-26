@@ -17,7 +17,7 @@ export default function Project({}: Props) {
       transition={{ duration: 1.5 }}
       className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px]  font-bold z-30  text-stone-400 text-sm 2xl:text-base xl:text-sm">
+      <h3 className="absolute top-24 uppercase tracking-[20px]  font-bold z-30  text-stone-400 text-sm 2xl:text-4xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl xs:text-2xl">
         Projects
       </h3>
 

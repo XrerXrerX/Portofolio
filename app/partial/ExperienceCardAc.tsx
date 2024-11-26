@@ -32,7 +32,7 @@ export default function ExperienceCard({}: Props) {
       className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0  2xl:w-2/5 xl:w-2/5 lg:w-3/4 md:w-3/4 sm:w-[350px]  xs:w-[250px] snap-center bg-[#060f14] border-b-4 border-b-[#505f4c]  2xl:p-4 xl:p-4 lg:p-2 md:p-2 sm:p-2 xs:p-2 hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden 2xl:mt-4 xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xs:mt-4"
     >
       <motion.img
-        initial={{ y: -100, opacity: 0 }}
+        initial={{ y: -50, opacity: 0 }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -55,13 +55,13 @@ export default function ExperienceCard({}: Props) {
         <p className="uppercase py-2 text-stone-500 text-center 2xl:text-xl xl:text-2xl lg:text-lg md:text-lg sm:text-base xs:text-xxs">
           started work June 2018 - 2019
         </p>
-        <ul className="list-disc grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 gap-1 2xl:text-base xl:text-sm lg:text-sm md:text-xs sm:text-xs xs:text-xs text-stone-400">
+        <ul className="p-4 mt-10 list-disc grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-1 2xl:text-base xl:text-sm lg:text-sm md:text-xs sm:text-xs xs:text-xs text-stone-400">
           <li>Controlling stock in camp</li>
           <li>make Journal and make sure the document is legal </li>
           <li>reporting financial report monthl</li>
           <li>Grouping transaction with COA Spesifications </li>
         </ul>
-        <div className="mb-32"></div>
+        <div className="mb-40"></div>
         <p className="uppercase underline py-2 text-stone-600 text-center text-sm md:text-xxs">
           Reason for resigning: I want to transition to a career in IT, aligning
           with my educational background and passion for the field{" "}
