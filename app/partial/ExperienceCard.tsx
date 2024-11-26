@@ -9,8 +9,8 @@ export default function ExperienceCard({}: Props) {
   return (
     <motion.article
       initial={{
-        scale: 0.4, // Memulai sedikit lebih besar
-        opacity: 0.7, // Awalnya transparan
+        scale: 0.4, // Memulai sedikit lebih kecil
+        opacity: 0.5, // Awalnya transparan 50%
       }}
       whileInView={{
         scale: 1, // Kembali ke ukuran normal
@@ -20,28 +20,28 @@ export default function ExperienceCard({}: Props) {
         scale: {
           type: "spring", // Efek pegas untuk transisi halus
           stiffness: 100, // Stiffness untuk kontrol efek pegas
-          damping: 10, // Pengurangan kecepatan pegas
+          damping: 20, // Pengurangan kecepatan pegas
         },
         opacity: {
           duration: 0.3, // Durasi transisi opacity
         },
       }}
       viewport={{
-        margin: "-10%", // Menyesuaikan margin viewport
+        margin: "-2%", // Menyesuaikan margin viewport
       }}
-      className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0 w-2/5 snap-center bg-[#060f14] border-b-4 border-b-[#505f4c]  2xl:p-4 xl:p-4 lg:p-2 md:p-2 sm:p-2 xs:p-2 hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden 2xl:mt-32 xl:mt-28 lg:mt-28 md:mt-28 sm:mt-28 xs:mt-28"
+      className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0 2xl:w-3/4 xl:w-3/4 lg:w-[550px] md:w-[550px] sm:w-[350px] xs:w-[340px]  snap-center bg-[#060f14] border-b-4 border-b-[#505f4c] 2xl:pt-4 xl:pt-4 lg:pt-2 md:pt-2 sm:pt-2 xs:pt-2 opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-pointer overflow-hidden 2xl:mt-4 xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xs:mt-4"
     >
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="2xl:w-24 xl:w-24 lg:w-24 md:w-24 sm:w-24 xs:w-24 2xl:h-24 xl:h-24 lg:h-24 md:h-24 sm:h-24 xs:h24  rounded-full  object-cover object-center"
+        className="2xl:w-24 xl:w-24 lg:w-24 md:w-24 sm:w-20 xs:w-16 2xl:h-24 xl:h-24 lg:h-24 md:h-24 sm:h-20 xs:h-16  rounded-full  object-cover object-center"
         src="coding.jpeg"
         alt=""
       />
 
-      <div className="px-0 md:px-10 ">
+      <div className="2xl:p-5 xl:p-5 lg:p-2 md:p-2 sm:p-2 xs:p-2 ">
         <h4 className=" font-bold 2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-lg xs:text-lg text-stone-400 text-center underline">
           System Engineer
         </h4>
@@ -156,24 +156,24 @@ export default function ExperienceCard({}: Props) {
           />
         </div>
 
-        <p className="uppercase py-2 text-stone-500 text-center 2xl:text-xl xl:text-2xl lg:text-lg md:text-lg sm:text-base xs:text-sm">
+        <p className="uppercase py-2 text-stone-500 text-center 2xl:text-xl xl:text-2xl lg:text-lg md:text-lg sm:text-xxs xs:text-sm">
           started work 2019 - untill Now
         </p>
-        <ul className="list-disc grid grid-cols-1 md:grid-cols-2 gap-1 2xl:text-xxs xl:text-sm lg:text-sm md:text-xs sm:text-xs xs:text-xs text-stone-400">
+        <ul className="list-disc grid 2xl:grid-cols-3 xl:grid-cols-3 m-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 gap-1 2xl:text-base xl:text-sm lg:text-xxs md:text-xxs sm:text-xxss xs:text-xxss text-stone-400">
           <li> Manage cloud 12 server AWS and 4 VPS Hostinger</li>
+          <li>
+            Deploy applications on AWS EC2 with self-configured environments.
+          </li>
           <li>
             Make a report costs, improvement, and performance Project that have
             been done. (all document support)
           </li>
           <li>
-            Deploy applications on AWS EC2 with self-configured environments.
-          </li>
-          <li>
-            Conduct testing for backend systems based on project requirements.
-          </li>
-          <li>
             Implement CI/CD pipelines for seamless project integration and
             deployment.
+          </li>{" "}
+          <li>
+            Configure servers and install necessary dependencies for deployment.
           </li>
           <li>
             Optimize SEO-friendly frontends using Server-Side Rendering (SSR),
@@ -188,10 +188,9 @@ export default function ExperienceCard({}: Props) {
             setups.
           </li>
           <li>
-            Configure servers and install necessary dependencies for deployment.
+            Conduct testing for backend systems based on project requirements.
           </li>
           <li>Build full stack applications</li>
-
           <li>
             Develop microservices with orchestration involving:
             <ul className="list-disc pl-6">
