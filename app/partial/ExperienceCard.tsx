@@ -42,7 +42,7 @@ export default function ExperienceCard({}: Props) {
       /> */}
 
       <div className="2xl:p-8 xl:p-6 lg:p-4 md:p-4 sm:p-3 xs:p-3 w-full">
-        <h4 className=" font-bold 2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-lg xs:text-sm text-neutral-100 text-center underline decoration-yellow-500/50">
+        <h4 className=" font-bold 2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-lg xs:text-sm text-neutral-100 text-center  decoration-yellow-500/50">
           DevOps | System Engineer | Cloud Engineer | Full Stack Developer
         </h4>
         {/* <div className="flex flex-wrap gap-2 my-1 justify-center ">
@@ -156,7 +156,7 @@ export default function ExperienceCard({}: Props) {
         <p className="uppercase py-2 text-neutral-400 text-center 2xl:text-xl xl:text-2xl lg:text-lg md:text-lg sm:text-sm xs:text-xs">
           started work 2019 - untill Now
         </p>
-        <ul className="list-disc grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 gap-3 2xl:text-base xl:text-sm lg:text-sm md:text-sm sm:text-xs xs:text-[8px] text-neutral-400 text-left">
+        <ul className="list-disc grid 2xl:grid-cols-2 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 gap-3 2xl:text-base xl:text-sm lg:text-sm md:text-sm sm:text-xs xs:text-[8px] text-neutral-400 text-left">
           <li>
             Develop full stack web and mobile Apps using NestJS, Laravel,
             Hapi.js, React.js, Next.js, and React Native (Expo).

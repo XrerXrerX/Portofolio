@@ -20,7 +20,7 @@ export default function SkillNodejs({ directionLeft }: Props) {
       <div className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-black 2xl:w-24 xl:w-24 lg:w-24 md:w-24 sm:w-24 xs:w-12 2xl:h-24 xl:h-24 lg:h-24 md:h-24 sm:h-24 xs:h-12 rounded-full">
         <div className="flex items-center justify-center h-full">
           <p className="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-xl sm:text-lg xs:text-base font-bold text-white opacity-100">
-            70%
+            80%
           </p>
         </div>
       </div>
