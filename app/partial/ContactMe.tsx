@@ -73,7 +73,7 @@ export default function ContactMe({}: Props) {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="group relative bg-neutral-800/80 backdrop-blur-sm border border-neutral-700 rounded-xl p-6 hover:border-yellow-500/50 transition-all duration-300 hover:shadow-yellow-500/20 hover:shadow-lg md:col-span-2 lg:col-span-1 md:flex hidden"
+            className="group relative bg-neutral-800/80 backdrop-blur-sm border border-neutral-700 rounded-xl p-6 hover:border-yellow-500/50 transition-all duration-300 hover:shadow-yellow-500/20 hover:shadow-lg md:col-span-2 lg:col-span-1 md:block hidden"
           >
             <div className="flex flex-col items-center space-y-4">
               <div className="p-3 bg-yellow-500/20 rounded-full group-hover:bg-yellow-500/30 transition-colors duration-300">
