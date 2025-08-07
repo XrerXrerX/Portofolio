@@ -19,7 +19,7 @@ export default function ContactMe({}: Props) {
           transition={{ duration: 0.8 }}
           className="2xl:text-4xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-2xl xs:text-lg font-semibold text-neutral-100"
         >
-          Let's work together!{" "}
+          Let&apos;s work together!{" "}
           <span className="text-yellow-500 underline decoration-yellow-500/50">
             Get in touch
           </span>
@@ -99,7 +99,7 @@ export default function ContactMe({}: Props) {
               Ready to collaborate?
             </h5>
             <p className="text-neutral-400 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities, interesting
+              I&apos;m always open to discussing new opportunities, interesting
               projects, creative ideas, or just having a chat about technology
               and development.
             </p>
