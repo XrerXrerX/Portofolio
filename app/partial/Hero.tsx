@@ -22,17 +22,18 @@ export default function Hero({}: Props) {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <img
-        className="relative rounded-fill h-32 w-32 mx-auto object-cover rounded-full"
+        className="relative rounded-fill h-32 w-32 mx-auto object-cover rounded-full border-2 border-yellow-500/50 shadow-yellow-500/40"
         src="./11.jpeg"
         alt=""
       />
       <div className="z-20">
-        <h2 className="2xl:text-lg xl:text-lg md:text-lg lg:text-sm sm:text-sm xs:text-sm uppercase text-slate-200 pb-2 tracking-[10px] md:tracking-[15px] xl:tracking-[15px]">
-          System Engineer
+        <h2 className="2xl:text-lg xl:text-lg md:text-lg lg:text-sm sm:text-sm xs:text-sm uppercase text-neutral-400 pb-2 tracking-[2px] md:tracking-[3px] xl:tracking-[5px]">
+          DevOps Engineer , System Engineer , Cloud Engineer , Full Stack
+          Developer
         </h2>
-        <h1 className="text-xl my-5 2xl:text-4xl xl:text-3xl  lg:text-4xl md:text-3xl sm:text-2xl xs:text-lg font-semibold scroll-px-10 text-[#FFEFD2]">
+        <h1 className="text-xl my-5 2xl:text-4xl xl:text-3xl  lg:text-4xl md:text-3xl sm:text-2xl xs:text-lg font-semibold scroll-px-10 text-yellow-500">
           <span className="mr-3">{text}</span>
-          <Cursor cursorColor="#775830" />
+          <Cursor cursorColor="#eab308" />
         </h1>
 
         <div className="my-3 flex flex-wrap gap-4 justify-center">

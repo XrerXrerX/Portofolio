@@ -35,10 +35,10 @@ export default function Skills({}: Props) {
     <div className="h-screen ">
       <div className="flex justify-center items-center ">
         <div className="text-center mt-24">
-          <h3 className="uppercase tracking-[20px] text-stone-500 2xl:text-3xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl xs:text-lg font-extrabold">
+          <h3 className="uppercase tracking-[20px] text-yellow-500 2xl:text-3xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl xs:text-lg font-extrabold">
             Skills
           </h3>
-          <p className="mt-2 text-stone-400 text-sm 2xl:text-base xl:text-sm">
+          <p className="mt-2 text-neutral-400 text-sm 2xl:text-base xl:text-sm">
             hover over a skill for seing profiency
           </p>
         </div>
