@@ -5,6 +5,27 @@
 @tailwind utilities;
 
 @layer components {
+  /* Fades a marquee out at both edges instead of cutting it off hard.
+     A mask is used rather than gradient overlays so it stays correct
+     whatever sits behind the row. */
+  .marquee-fade {
+    --fade: clamp(1.5rem, 8vw, 8rem);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 var(--fade),
+      #000 calc(100% - var(--fade)),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 var(--fade),
+      #000 calc(100% - var(--fade)),
+      transparent 100%
+    );
+  }
+
   .heroButton {
     @apply inline-block px-6 py-2 border border-secondary-light rounded-full uppercase text-sm tracking-widest text-content-muted transition-all hover:border-accent hover:text-content hover:bg-secondary outline-none focus-visible:ring-2 focus-visible:ring-accent;
   }

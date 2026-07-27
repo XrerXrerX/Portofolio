@@ -136,7 +136,7 @@ function MarqueeRow({
        cannot realistically be clicked. Reduced motion stops it outright and
        hands over manual scrolling. */
     <div
-      className={`group flex-1 flex ${align} overflow-hidden motion-reduce:overflow-x-auto`}
+      className={`marquee-fade group flex-1 flex ${align} overflow-hidden motion-reduce:overflow-x-auto`}
     >
       <div
         style={
@@ -163,7 +163,7 @@ export default function Project({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex flex-col relative overflow-hidden"
+      className="h-screen flex flex-col relative overflow-hidden gap-1 lg:gap-2"
     >
       <h3 className="absolute top-24 left-1/2 transform -translate-x-1/2 uppercase tracking-[20px] font-bold z-30 text-accent text-sm 2xl:text-4xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl xs:text-2xl">
         Projects

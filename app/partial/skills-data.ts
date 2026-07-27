@@ -126,16 +126,23 @@ const ALL: Skill[] = [
 
 const WITH_LOGO = ALL.filter((s) => s.img);
 const WITHOUT_LOGO = ALL.filter((s) => !s.img);
-const HALF = Math.ceil(WITHOUT_LOGO.length / 2);
+
+/** How many rows the text-badge skills are spread across. */
+const TEXT_ROWS = 3;
+const CHUNK = Math.ceil(WITHOUT_LOGO.length / TEXT_ROWS);
 
 /**
- * Row 1 is every skill that has a logo; the text-badge skills fill rows 2-3.
- * The split is derived from the data rather than hardcoded, so dropping a new
- * logo into /public and setting `img` moves that skill up to row 1 on its own.
- * Category order is preserved inside each row.
+ * Row 1 is every skill that has a logo; the text-badge skills fill the rows
+ * below it. The split is derived from the data rather than hardcoded, so
+ * dropping a new logo into /public and setting `img` moves that skill up to
+ * row 1 on its own. Category order is preserved inside each row.
+ *
+ * Empty rows are dropped so shrinking WITHOUT_LOGO can never render a blank
+ * marquee row.
  */
 export const SKILL_ROWS: Skill[][] = [
   WITH_LOGO,
-  WITHOUT_LOGO.slice(0, HALF),
-  WITHOUT_LOGO.slice(HALF),
-];
+  ...Array.from({ length: TEXT_ROWS }, (_, i) =>
+    WITHOUT_LOGO.slice(i * CHUNK, (i + 1) * CHUNK)
+  ),
+].filter((row) => row.length > 0);

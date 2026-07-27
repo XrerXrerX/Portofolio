@@ -12,7 +12,9 @@ type Props = {};
 const COPIES = 3;
 const SHIFT = `-${100 / COPIES}%`;
 
-const DURATIONS = [46, 58, 52];
+// Indexed modulo the row count, so adding or removing a row can never read
+// past the end and leave a row with no duration.
+const DURATIONS = [46, 58, 52, 64];
 
 function SkillBadge({ skill }: { skill: Skill }) {
   return (
@@ -72,7 +74,7 @@ function MarqueeRow({
        otherwise badges slide out from under the cursor and the hover detail,
        which is the whole point of this section, is impossible to read.
        Reduced motion stops it outright and hands over manual scrolling. */
-    <div className="group flex w-full overflow-hidden motion-reduce:overflow-x-auto">
+    <div className="marquee-fade group flex w-full overflow-hidden motion-reduce:overflow-x-auto">
       <div
         style={
           {
@@ -103,12 +105,15 @@ export default function Skills({}: Props) {
         Hover a skill to see its details
       </p>
 
-      <div className="mt-8 flex w-full flex-col gap-5 sm:gap-6">
+      {/* Padding lives on this wrapper, not on the rows: `overflow-hidden`
+          clips at the padding box, so padding on the row itself would still
+          let badges show through the gutter. */}
+      <div className="mt-8 flex w-full flex-col gap-5 px-4 sm:gap-6 sm:px-8 lg:px-12">
         {SKILL_ROWS.map((row, i) => (
           <MarqueeRow
             key={i}
             skills={row}
-            duration={DURATIONS[i]}
+            duration={DURATIONS[i % DURATIONS.length]}
             reverse={i % 2 === 1}
           />
         ))}
