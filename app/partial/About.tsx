@@ -95,7 +95,7 @@ export default function About({}: Props) {
               Diki Hidayatullah
             </h4>
             <p className="mt-1 text-sm sm:text-base font-semibold text-accent">
-              System &amp; DevOps Engineer
+              DevOps Engineer, System Engineer, Cloud Engineer, &amp; Full Stack Developer
             </p>
 
             <dl className="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 text-left">
