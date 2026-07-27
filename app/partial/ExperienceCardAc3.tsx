@@ -29,7 +29,7 @@ export default function ExperienceCardAc({}: Props) {
       viewport={{
         margin: "-5%", // Menyesuaikan margin viewport
       }}
-      className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0 w-[600px] h-[780px] snap-center bg-[#060f14] p-10 hover:opacity-100 border-b-4 border-b-[#505f4c] opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden mt-36"
+      className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0 w-[600px] h-[780px] snap-center bg-secondary-dark p-10 hover:opacity-100 border-b-4 border-b-accent/70 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden mt-36"
     >
       <motion.img
         initial={{ y: -100, opacity: 0 }}
@@ -52,7 +52,7 @@ export default function ExperienceCardAc({}: Props) {
           MENARA BCA LT 48
         </p>
 
-        <p className="uppercase py-2 text-gray-300 text-center text-xl">
+        <p className="uppercase py-2 text-content-muted text-center text-xl">
           started work June 2018 - 2019
         </p>
         <ul className="list-disc mt-12 grid grid-cols-1 md:grid-cols-2 gap-2  md:text-lg">
@@ -62,7 +62,7 @@ export default function ExperienceCardAc({}: Props) {
           <li>Grouping transaction with COA Spesifications </li>
         </ul>
         <div className="mb-32"></div>
-        <p className="uppercase underline py-5 text-gray-300 text-center text-[12px] md:text-[15px] xl:text-[20px]">
+        <p className="uppercase underline py-5 text-content-muted text-center text-[12px] md:text-[15px] xl:text-[20px]">
           reasons for resigning: want to Switch Career cause my major is an IT
         </p>
       </div>

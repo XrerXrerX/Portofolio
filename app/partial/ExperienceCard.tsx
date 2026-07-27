@@ -29,7 +29,7 @@ export default function ExperienceCard({}: Props) {
       viewport={{
         margin: "-2%", // Menyesuaikan margin viewport
       }}
-      className="flex flex-col text-center justify-center rounded-lg items-center space-y-1 max-w-7xl mx-auto bg-neutral-800/80 backdrop-blur-sm border-b-4 border-b-yellow-500/70 opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-pointer overflow-hidden border border-yellow-700/60 shadow-xl sm:space-y-2"
+      className="flex flex-col text-center justify-center rounded-lg items-center space-y-1 max-w-7xl mx-auto bg-secondary backdrop-blur-sm border-b-4 border-b-accent/70 opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-pointer overflow-hidden border border-accent-dark/60 shadow-xl sm:space-y-2"
     >
       {/* <motion.img
         initial={{ y: -50, opacity: 0 }}
@@ -42,7 +42,7 @@ export default function ExperienceCard({}: Props) {
       /> */}
 
       <div className="2xl:p-8 xl:p-6 lg:p-4 md:p-4 sm:p-3 xs:p-3 w-full">
-        <h4 className=" font-bold 2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-lg xs:text-sm text-neutral-100 text-center  decoration-yellow-500/50">
+        <h4 className=" font-bold 2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-lg xs:text-sm text-content text-center  decoration-accent/50">
           DevOps | System Engineer | Cloud Engineer | Full Stack Developer
         </h4>
         {/* <div className="flex flex-wrap gap-2 my-1 justify-center ">
@@ -153,10 +153,10 @@ export default function ExperienceCard({}: Props) {
           />
         </div> */}
 
-        <p className="uppercase py-2 text-neutral-400 text-center 2xl:text-xl xl:text-2xl lg:text-lg md:text-lg sm:text-sm xs:text-xs">
+        <p className="uppercase py-2 text-content-muted text-center 2xl:text-xl xl:text-2xl lg:text-lg md:text-lg sm:text-sm xs:text-xs">
           started work 2019 - untill Now
         </p>
-        <ul className="list-disc grid 2xl:grid-cols-2 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 gap-3 2xl:text-base xl:text-sm lg:text-sm md:text-sm sm:text-xs xs:text-[8px] text-neutral-400 text-left">
+        <ul className="list-disc grid 2xl:grid-cols-2 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 gap-3 2xl:text-base xl:text-sm lg:text-sm md:text-sm sm:text-xs xs:text-[8px] text-content-muted text-left">
           <li>
             Develop full stack web and mobile Apps using NestJS, Laravel,
             Hapi.js, React.js, Next.js, and React Native (Expo).

@@ -29,7 +29,7 @@ export default function ExperienceCardAc2({}: Props) {
       viewport={{
         margin: "-10%", // Menyesuaikan margin viewport
       }}
-      className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0 w-[600px] h-[780px] snap-center bg-[#060f14] border-b-4 border-b-[#505f4c] p-10 hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden mt-36"
+      className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0 w-[600px] h-[780px] snap-center bg-secondary-dark border-b-4 border-b-accent/70 p-10 hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden mt-36"
     >
       <motion.img
         initial={{ y: -100, opacity: 0 }}
@@ -49,7 +49,7 @@ export default function ExperienceCardAc2({}: Props) {
           CV. BINA KARYA USAHA
         </p>
 
-        <p className="text-[15px] md:text-xl py-2 md:py-2 text-gray-300 text-center">
+        <p className="text-[15px] md:text-xl py-2 md:py-2 text-content-muted text-center">
           started work 2016 - June 2018
         </p>
         <ul className="list-disc mt-12 grid grid-cols-1 md:grid-cols-2 gap-2  md:text-sm">
@@ -79,7 +79,7 @@ export default function ExperienceCardAc2({}: Props) {
           </li>
         </ul>
         <div className="mb-12"></div>
-        <p className="uppercase underline py-2 text-gray-300 text-center text-[10px] md:text-xl">
+        <p className="uppercase underline py-2 text-content-muted text-center text-[10px] md:text-xl">
           reasons for resigning : Have chance Opportunity work in big Company
         </p>
       </div>

@@ -29,7 +29,7 @@ export default function ExperienceCard({}: Props) {
       viewport={{
         margin: "-10%", // Menyesuaikan margin viewport
       }}
-      className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0  2xl:w-2/5 xl:w-2/5 lg:w-3/4 md:w-3/4 sm:w-[350px]  xs:w-[250px] snap-center bg-[#060f14] border-b-4 border-b-[#505f4c]  2xl:p-4 xl:p-4 lg:p-2 md:p-2 sm:p-2 xs:p-2 hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden 2xl:mt-4 xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xs:mt-4"
+      className="flex flex-col rounded-lg items-center space-y-2 flex-shrink-0  2xl:w-2/5 xl:w-2/5 lg:w-3/4 md:w-3/4 sm:w-[350px]  xs:w-[250px] snap-center bg-secondary-dark border-b-4 border-b-accent/70  2xl:p-4 xl:p-4 lg:p-2 md:p-2 sm:p-2 xs:p-2 hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden 2xl:mt-4 xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xs:mt-4"
     >
       <motion.img
         initial={{ y: -50, opacity: 0 }}
@@ -42,27 +42,27 @@ export default function ExperienceCard({}: Props) {
       />
 
       <div className="px-0 md:px-10 ">
-        <h4 className=" font-bold 2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-lg xs:text-lg text-stone-400 text-center underline">
+        <h4 className=" font-bold 2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-lg xs:text-lg text-content-muted text-center underline">
           Accounting Finance
         </h4>
-        <p className="font-light 2xl:text-xl xl:text-lg lg:text- md:text-lg sm:text-sm xs:text-sm mt-1 text-center text-stone-500">
+        <p className="font-light 2xl:text-xl xl:text-lg lg:text- md:text-lg sm:text-sm xs:text-sm mt-1 text-center text-content-muted">
           PT BARA ALAM UTAMA <br />
           (PT. AGATHIS ALAM INDONESIA)
           <br />
           MENARA BCA LT 48{" "}
         </p>
 
-        <p className="uppercase py-2 text-stone-500 text-center 2xl:text-xl xl:text-2xl lg:text-lg md:text-lg sm:text-base xs:text-xxs">
+        <p className="uppercase py-2 text-content-muted text-center 2xl:text-xl xl:text-2xl lg:text-lg md:text-lg sm:text-base xs:text-xxs">
           started work June 2018 - 2019
         </p>
-        <ul className="p-4 mt-10 list-disc grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-1 2xl:text-base xl:text-sm lg:text-sm md:text-xs sm:text-xs xs:text-xs text-stone-400">
+        <ul className="p-4 mt-10 list-disc grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-1 2xl:text-base xl:text-sm lg:text-sm md:text-xs sm:text-xs xs:text-xs text-content-muted">
           <li>Controlling stock in camp</li>
           <li>make Journal and make sure the document is legal </li>
           <li>reporting financial report monthl</li>
           <li>Grouping transaction with COA Spesifications </li>
         </ul>
         <div className="mb-40"></div>
-        <p className="uppercase underline py-2 text-stone-600 text-center text-sm md:text-xxs">
+        <p className="uppercase underline py-2 text-content-subtle text-center text-sm md:text-xxs">
           Reason for resigning: I want to transition to a career in IT, aligning
           with my educational background and passion for the field{" "}
         </p>

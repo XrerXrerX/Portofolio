@@ -1,7 +1,6 @@
 /** @format */
 
 "use client";
-import Image from "next/image";
 import Header from "./partial/Header";
 import Hero from "./partial/Hero";
 import About from "./partial/About";
@@ -10,22 +9,25 @@ import Skills from "./partial/Skills";
 import Project from "./partial/Project";
 import ContacMe from "./partial/ContactMe";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { SCROLL_CONTAINER_ID, scrollToSection } from "./partial/navigation";
 
 export default function Home() {
   return (
+    /* This div — not the window — is the scroll container, so it carries the id
+       the nav's IntersectionObserver roots against. `scroll-smooth` keeps plain
+       hash links smooth even before JS hydrates. */
     <motion.div
+      id={SCROLL_CONTAINER_ID}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-black text-neutral-100 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-neutral-800 scrollbar-thumb-yellow-500/80"
+      className="bg-primary text-content h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar scrollbar-track-secondary scrollbar-thumb-accent/80"
     >
       {/* // header */}
       <Header />
 
       {/* //HERO */}
-      {/* <section className="snap-center" id="hero"> */}
       <section className="snap-center" id="hero">
         <Hero />
       </section>
@@ -41,7 +43,6 @@ export default function Home() {
       </section>
 
       {/* //skills */}
-      {/* <section className="snap-start" id="skils"> */}
       <section className="snap-start" id="skills">
         <Skills />
       </section>
@@ -57,17 +58,25 @@ export default function Home() {
       </section>
 
       {/* //footer  */}
-      <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
-          <div className="flex relative items-center justify-center">
+      <footer className="sticky bottom-5 w-full">
+        <div className="flex relative items-center justify-center">
+          <a
+            href="#hero"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("hero");
+            }}
+            aria-label="Back to top"
+            className="rounded-full outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          >
             <img
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src="up2.png"
+              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 transition duration-300 cursor-pointer"
+              src="/up2.png"
               alt=""
             />
-          </div>
-        </footer>
-      </Link>
+          </a>
+        </div>
+      </footer>
     </motion.div>
   );
 }

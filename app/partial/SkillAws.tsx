@@ -1,5 +1,7 @@
 /** @format */
 
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -9,20 +11,24 @@ type Props = {
 
 export default function SkillAws({ directionLeft }: Props) {
   return (
-    <div className="group relative flex cursor-pointer">
+    <div
+      className="group relative flex cursor-pointer rounded-full outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      tabIndex={0}
+      aria-label="AWS — 85% proficiency"
+    >
       <motion.img
         initial={{ x: directionLeft ? -150 : 150, opacity: 0 }}
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, x: 0 }}
-        src="aws.png"
-        className="rounded-full border border-gray-500 object-cover 2xl:w-24 xl:w-24 lg:w-24 md:w-24 sm:w-24 xs:w-12 2xl:h-24 xl:h-24 lg:h-24 md:h-24 sm:h-24 xs:h-12 filter group-hover:grayscale-0 transition duration-250 ease-in-out"
+        viewport={{ once: true }}
+        src="/aws.png"
+        alt="AWS"
+        className="rounded-full border border-secondary-light object-cover 2xl:w-24 xl:w-24 lg:w-24 md:w-24 sm:w-24 xs:w-12 2xl:h-24 xl:h-24 lg:h-24 md:h-24 sm:h-24 xs:h-12 shadow-lg filter grayscale transition duration-300 ease-in-out group-hover:grayscale-0 group-focus:grayscale-0"
       />
-      <div className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-black 2xl:w-24 xl:w-24 lg:w-24 md:w-24 sm:w-24 xs:w-12 2xl:h-24 xl:h-24 lg:h-24 md:h-24 sm:h-24 xs:h-12 rounded-full">
-        <div className="flex items-center justify-center h-full">
-          <p className="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-xl sm:text-lg xs:text-base font-bold text-white opacity-100">
-            85%
-          </p>
-        </div>
+      <div className="absolute inset-0 flex items-center justify-center rounded-full border border-accent/50 bg-secondary-dark/90 opacity-0 backdrop-blur-sm transition duration-300 ease-in-out group-hover:opacity-100 group-focus:opacity-100">
+        <p className="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-xl sm:text-lg xs:text-base font-bold text-accent">
+          85%
+        </p>
       </div>
     </div>
   );
